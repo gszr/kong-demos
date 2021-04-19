@@ -1,3 +1,6 @@
+# XXX THIS EXAMPLE IS OUT-OF-DATE AND APPLIES ONLY TO KONG <= 2.2
+# CHECK OUT THE OFFICIAL DOCS AT https://docs.konghq.com/gateway-oss/latest/external-plugins/
+
 FROM golang:alpine as builder
 
 RUN apk add --no-cache git gcc libc-dev
