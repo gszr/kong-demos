@@ -1,6 +1,13 @@
 #
 make
 
+docker run -ti --rm --name kong-log-customization -v $PWD:/demo \
+  -e "KONG_DATABASE=off" \
+  -e "KONG_DECLARATIVE_CONFIG=/demo/00-original-logs_config.yml" \
+  -e "KONG_PROXY_LISTEN=0.0.0.0:8000" \
+  -p 8000:8000 \
+  kong-2.4-demo-log-customization
+
 #
 # Run Kong with first declarative config (for unsetting an existing log field)
 #

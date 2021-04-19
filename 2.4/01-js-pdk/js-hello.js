@@ -19,7 +19,7 @@ class KongPlugin {
 
     // the following can be "parallel"ed
     await Promise.all([
-      kong.response.setHeader("x-hello-from-javascript", "JavaScript says " + message + " to " + host),
+      kong.response.setHeader("x-hello-from-javascript", "JavaScript says " + message.toUpperCase() + " to " + host),
       kong.response.setHeader("x-javascript-pid", proc.pid),
     ])
   }
