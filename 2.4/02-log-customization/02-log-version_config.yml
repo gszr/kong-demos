@@ -1,0 +1,13 @@
+# go.yml
+_format_version: "1.1"
+services:
+- url: https://httpbin.org
+  routes:
+  - paths:
+    - "/"
+  plugins:
+  - name: file-log
+    config:
+      path: /var/log/kong/proxy.log
+      custom_fields_by_lua:
+        kong_version: return require("kong.meta")._VERSION

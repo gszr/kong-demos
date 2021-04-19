@@ -1,0 +1,11 @@
+# go.yml
+_format_version: "1.1"
+services:
+- url: https://httpbin.org
+  routes:
+  - paths:
+    - "/"
+  plugins:
+  - name: js-hello
+    config:
+      message: hello
