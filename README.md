@@ -1,5 +1,8 @@
 ### Kong Community Call Meetup
 
+:warning: Please use the [Kong Docs](https://docs.konghq.com) as the source of truth!
+This repo is solely for demos and will get out of date.
+
 #### 2.0
 
 Demos for Kong 2.0 Community Call (Feb '20).
@@ -15,7 +18,4 @@ Demos for Kong 2.4 Community Call (Apr '21).
 1. JavaScript PDK: develop Kong plugins in JavaScript!
 2. Log Customization: customize your log entries
 
-#### Kong Docs
 
-Please use the Kong Docs as the source of truth! This repo is solely for demos
-and will get out of date.
