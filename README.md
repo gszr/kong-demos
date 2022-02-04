@@ -14,3 +14,8 @@ Demos for Kong 2.4 Community Call (Apr '21).
 
 1. JavaScript PDK: develop Kong plugins in JavaScript!
 2. Log Customization: customize your log entries
+
+#### Kong Docs
+
+Please use the Kong Docs as the source of truth! This repo is solely for demos
+and will get out of date.
