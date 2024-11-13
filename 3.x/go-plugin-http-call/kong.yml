@@ -1,0 +1,19 @@
+# used by gs if running kong on host rather than docker
+
+_format_version: "2.1"
+_transform: true
+
+services:
+- host: localhost
+  name: httpbin
+  port: 8080
+  protocol: http
+  routes:
+  - name: httpbin
+    paths:
+    - /
+    strip_path: true
+    plugins:
+     - name: go-hello
+       config:
+         message: hellowww
